@@ -1,0 +1,11 @@
+% layout 'default';
+<table>
+    <tr>
+% for (@{$days}) {
+        <td class="cell"><%= $_ %></td>
+%     if (($_ % 7) == 0) {
+        </tr><tr>
+%     }
+% }
+    </tr>
+</table>
